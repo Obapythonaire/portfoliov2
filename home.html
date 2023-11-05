@@ -39,10 +39,10 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item"><a href="./home.html" class="nav-link active" aria-current="page">Home</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
+                            <li class="nav-item"><a href="#about-me" class="nav-link">About</a></li>
+                            <li class="nav-item"><a href="#projects-section" class="nav-link">Projects</a></li>
                             <li class="nav-item"><a href="./blog.html" class="nav-link">Blog</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                            <li class="nav-item"><a href="#contact-me" class="nav-link">Contact</a></li>
                         </ul>
                         <!-- Moved the search form and toggle button outside of the ul -->
                         <form class="d-flex" role="search">
@@ -134,7 +134,7 @@
 
     <!-- Projects -->
 
-    <div class="container px-4 py-5" id="custom-cards">
+    <div class="container px-4 py-5" id="projects-section">
         <h2 class="pb-2 border-bottom">My Projects</h2>
     
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
@@ -250,7 +250,7 @@
                         <h3 class="mb-0">{{ post_title }}</h3>
                         <div class="mb-1 text-body-secondary">{{ post_date }}</div>
                         <p class="mb-auto">{{ post_content }}</p>
-                        <a href="./blog.html" class="icon-link gap-1 icon-link-hover stretched-link">
+                        <a href="./blogpost.html" class="icon-link gap-1 icon-link-hover stretched-link">
                           Continue reading
                           <svg class="bi">
                             <use xlink:href="#chevron-right" />
@@ -258,49 +258,10 @@
                         </a>
                       </div>
                       <div class="col-auto d-none d-lg-block">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC3THKZ8tUXhqWuZ4ink0kskHcu0VpRnctoqRhax1dlw&s" width="200" height="250" alt="Thumbnail" />
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC3THKZ8tUXhqWuZ4ink0kskHcu0VpRnctoqRhax1dlw&s" width="200" height="250" alt="Thumbnail" loading="lazy" />
                       </div>
                     </div>
                   </div>
-
-                <!-- Recent Posts Starts -->
-                <div class="col-md-4">
-                    <div class="position-sticky" style="top: 2rem;">
-              
-                      <div>
-                        <h4 class="fst-italic">Recent posts</h4>
-                        <ul class="list-unstyled">
-                          <li>
-                            <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
-                              <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-                              <div class="col-lg-8">
-                                <h6 class="mb-0">Example blog post title</h6>
-                                <small class="text-body-secondary">January 15, 2023</small>
-                              </div>
-                            </a>
-                          </li>
-                          <li>
-                            <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
-                              <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-                              <div class="col-lg-8">
-                                <h6 class="mb-0">This is another blog post title</h6>
-                                <small class="text-body-secondary">January 14, 2023</small>
-                              </div>
-                            </a>
-                          </li>
-                          <li>
-                            <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
-                              <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-                              <div class="col-lg-8">
-                                <h6 class="mb-0">Longer blog post title: This one has multiple lines!</h6>
-                                <small class="text-body-secondary">January 13, 2023</small>
-                              </div>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                <!-- Recent Posts Ends -->
             </div>
     </section>
     
@@ -308,7 +269,7 @@
     
         <!-- Contact Us Starts -->
     
-        <div class="container mt-5">
+        <div class="container mt-5" id="contact-me">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <h2 class="text-center mb-4">Contact Us</h2>
